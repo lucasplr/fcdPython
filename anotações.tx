@@ -1,0 +1,15 @@
+continue skip to the next iteration of the loop
+
+
+Command get. - to search in a dictionaryto see if a value is there. Instead of use 
+if name in counts:
+    x = counts[name]
+else:
+    x = 0
+
+the get method will be used like this:
+x = counts.get(name,0) 
+:
+    {'csev': 2, 'zqian':1}
+
+
