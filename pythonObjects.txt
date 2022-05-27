@@ -1,0 +1,27 @@
+A Object Oriented is a program that is made um of many cooperating objects.
+Is made um of one or more objects working together, objects make use of each other's capabilities.
+
+Objects get created and used.
+Objects are bits of code and data.
+Objects hide detail.
+
+
+Definitions
+    Class:
+        a template - Dog
+        defines the abstract characteristics of a object (attributes, fields, properties)
+    Method or Message:
+        A defined capability of a class - bark()
+        An object abilitie.
+    Field or attribute:
+        A bit of data in a class - length
+    Object or instance:
+        A particular instance of a class - Lassie
+
+the template defines the shape and nature of the class.
+
+Instance of object, like Lessie, that is a instance of Dog.
+
+Constructor is a Code that runs when an object is created
+
+Inheriance is the ability to extend a class to make a new class

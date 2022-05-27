@@ -1,0 +1,7 @@
+Application Program Interface(API)
+
+API Security and Rate Limiting 
+    API usually have a user limit per day, like Google Geocoding API, with 2500 requests per day.
+
+Twitter API for example, whe making a request from the Twitter API a key must always be sent with the request.
+
