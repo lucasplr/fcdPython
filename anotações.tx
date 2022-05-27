@@ -13,3 +13,26 @@ x = counts.get(name,0)
     {'csev': 2, 'zqian':1}
 
 
+To sort a dictionary:
+
+d = ('a': 10, 'b': 1, 'c':22)
+t = sorted(d.items())
+[('a', 10), ('b', 1), ('c', 22)]
+for k, v in sorted(d.items()):
+    print(k, v)
+a 10
+b 1
+c 22
+
+to reverse and sort by the values:
+
+c = ('a': 10, 'b': 1, 'c':22)
+tmp = list(*)
+we will append the items, but instead of ordering them by the key, we will append ordering by the values.
+for k, v in c.items():
+    tmp.append(v, k) -> order inverted.
+print(tmp)
+[(10, 'a'), (1, 'b'), (22, 'c')]
+tmp = sorted(tmp.reverse=True)
+print(tmp)
+[(22, 'c'), (10, 'a'), (1, 'b')] -> reverse sort
