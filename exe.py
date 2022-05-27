@@ -1,7 +1,7 @@
 from itertools import count
 
 
-fhand = open('texto.txt')
+fhand = open('romeo.txt')
 counts = dict()
 for line in fhand:
     words = line.split()

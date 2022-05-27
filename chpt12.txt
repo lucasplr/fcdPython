@@ -1,0 +1,25 @@
+network
+
+Transport Control Protocol(TCP)
+built on top of IP(Internet Protocol)
+
+TCP Connections / Sockets
+
+'A internet socket, or network socket is an endpoint of a bidirectional inter-process communication flow across an internet. Protocol-based computer network, such as the internet' - Protocolo bidirecional, onde 2 processos são ligados através da internet. Ex. de um lado o meu navegador, e do outro um servidor de algum site. A conexão que fazemos a um site por exemplo, é chamada de socket.
+
+TCP Port Numbers
+
+A port is an application-specific or process-specific software communications endpoint.
+Allows multiple networked applications to coexist on the same server.
+
+
+coomon TCP ports
+
+HTTP(80)
+HTTPS(443) - secure
+
+Sockets in python
+
+Has built in support
+
+import socket
