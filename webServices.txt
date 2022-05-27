@@ -1,0 +1,6 @@
+most common are JSON and XML
+
+xml - eXtensible Markup Language
+
+JSON
+JSON represents data as nested 'lists' and 'dictionaries'

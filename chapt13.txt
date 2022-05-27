@@ -1,0 +1,11 @@
+Application Protocol
+
+What we do with the socket?
+
+A protocol is a set o rules all parts follow so we can predict each other behavior.
+
+http:// - protocol
+www.dr-chuck.com - host
+page.htm - document
+
+wen we click on a link the browser makes a connection to the web server and issues a 'GET' request, to get the content.
