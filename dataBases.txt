@@ -1,0 +1,28 @@
+Relational Databases
+    Relational databases model data by storing rows and columns in tables.
+Database - contains many tables
+Relation (or table) - contains tuples and attributes
+Tuple (or row) - a set of fields that generally represents an "object" like a person or a music track
+Attribute (also column or field) - one of possibly many elements of data corresponding to the object represented by the row
+
+SQL - Structured Query Languge - is the language we used to issue commands to the databases
+
+-create a table
+-retrieve some data
+-insert data
+-delete data
+
+-CRUD - Create, Read, Update and Delete
+
+Web applications w/ Databases
+- Aplicattion developer
+
+Database Administrator (DBA) is a person responsible for the desing, implementation, maintence, and rapair of an organization's database.
+
+Database Model is the structure or format of a database.
+
+Common Database Systems - 
+Oracle - Large, commercial, enterprise-scale, very very twerkable.
+MySql - Simpler but very fast and scalable - commercial open source
+SqlServer - from Microsoft (also Access)
+HSQL, SQLite, Postgres...
