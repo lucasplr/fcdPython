@@ -1,0 +1,15 @@
+Three Kinds of Keys
+
+Primary Key - generally an integer auto-increment field
+
+Logical key - What the outside world uses for lookup
+
+Foreign key - generally an integer key pointing to a row in another table
+
+Key Rules
+
+Never use logacal key as the primary key
+
+Logical keys can and do change, albeit slowly
+
+Relationships that are based on matching string fields are less efficient than integers
