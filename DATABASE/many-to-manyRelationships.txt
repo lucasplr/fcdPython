@@ -1,0 +1,11 @@
+many to many
+There is needed to add a "connection" table with two foreign keys
+there is usually no separate primary key
+
+
+Additional SQL
+
+indexes - improve access performance for things like string fields
+
+Contraints on data - (cannot be NULL, etc;..)
+Transactions - Allow SQL operations to be grouped and done as a unit

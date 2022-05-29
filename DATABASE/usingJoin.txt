@@ -3,3 +3,5 @@ The JOIN Operation
 JOIN operation links across several tables as part of a select operation
 
 Juntar as tabelas, como do album e do artista, que usam o mesmo id.
+
+Juntar duas tabelas sem ON vai dar todas as combinações possiveis de linhas

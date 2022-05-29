@@ -1,0 +1,2 @@
+Web Crawler
+    Is a computer program that browses the www in a methodic, automated manner.
