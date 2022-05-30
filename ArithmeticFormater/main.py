@@ -1,8 +1,8 @@
-a = (['32 + 8', '15 - 2', '5 + 2'])
+from arithmetic_arranger import arithmetic_arranger
+from unittest import main
 
-for c in range(0, len(a)):
-    print('',end='')
-    for k in range(0, len(a[c])):
-        print(a[c][k])
-    print('a',end='')
 
+arithmetic_arranger(["32 + 698", "3801 - 2", "45 + 43", "123 + 49"])
+
+#run unit tests automatically
+main(module='test module', exit=False)
