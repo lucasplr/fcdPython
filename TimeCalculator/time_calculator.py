@@ -12,6 +12,8 @@ def add_time(init, add, showD=False):
     endadd = addhr.split('.')[1]
     
     stfinal = int(sthr) + int(stadd)
+    while stfinal >= 24:
+        stfinal = stfinal - 24
     scfinal = int(endhr) + int(endadd)
     if scfinal >= 60:
         scfinal = scfinal - 60
@@ -23,4 +25,4 @@ def add_time(init, add, showD=False):
         timed = 'PM' 
 
 
-    return f'{som}'
+    return f'{stfinal}:{scfinal} {timed}'
