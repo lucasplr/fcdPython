@@ -1,4 +1,18 @@
 def add_time(init, add, showD=False):
+    semana = [
+        ['monday'],
+        ['tuesday'],
+        ['wednesday'],
+        ['thursday'],
+        ['friday'],
+        ['saturday'],
+        ['sunday'],
+    ]
+    showD = showD.lower()
+    dayS = 0
+    for k, c in enumerate(semana):
+        if c[0] == showD:
+            dayS = k
     restday = 0
     hr = init.split(' ')[0].replace(':','.')
     timed = init.split(' ')[1]
@@ -16,6 +30,9 @@ def add_time(init, add, showD=False):
     while stfinal >= 24:
         stfinal = stfinal - 24
         days+=1
+    dayS = dayS + days
+    while dayS > 6:
+        dayS -= 7
     dayspassed = ''
     if days == 1:
         dayspassed = '(next day)'
@@ -32,4 +49,4 @@ def add_time(init, add, showD=False):
         timed = 'PM' 
 
 
-    return f'{stfinal}:{scfinal} {timed} {dayspassed}'
+    return f'{stfinal}:{scfinal} {timed}, {semana[dayS][0]} {dayspassed} {days} {dayS}'
