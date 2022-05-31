@@ -12,8 +12,15 @@ def add_time(init, add, showD=False):
     endadd = addhr.split('.')[1]
     
     stfinal = int(sthr) + int(stadd)
+    days = 0
     while stfinal >= 24:
         stfinal = stfinal - 24
+        days+=1
+    dayspassed = ''
+    if days == 1:
+        dayspassed = '(next day)'
+    else:
+        dayspassed = f'({days} days later)'
     scfinal = int(endhr) + int(endadd)
     if scfinal >= 60:
         scfinal = scfinal - 60
@@ -25,4 +32,4 @@ def add_time(init, add, showD=False):
         timed = 'PM' 
 
 
-    return f'{stfinal}:{scfinal} {timed}'
+    return f'{stfinal}:{scfinal} {timed} {dayspassed}'
