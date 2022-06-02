@@ -15,8 +15,13 @@ auto = budget.Category('Auto')
 auto.deposit(1000, 'initial deposit')
 auto.withdraw(15)
 
+
 print(food)
 print(clothing)
+
+
+print(chart([food, clothing, auto]))
+
 
 
 main(module='test_module', exit=False)
