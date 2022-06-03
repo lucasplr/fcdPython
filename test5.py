@@ -1,5 +1,5 @@
-a = ('orange', 'blue', 'triste')
-b = []
-b.append(a[0])
+a = [4, 4, 0, 3]
+b = 5
+
+a = type(a)
 print(a)
-print(b)
