@@ -4,15 +4,20 @@ def shape_calculator():
 
 class Rectangle:
 
+    def __init__(self, width=5, height=10):
+        self.width = width
+        self.height = height
+    
+    def __str__(self):
+        return f'Rectangle(width={self.width}, height={self.height})'
+
+
     def set_width(self, newW):
         self.width = newW
 
     def set_height(self, newH):
         self.height = newH
 
-    def __init__(self, width=5, height=10):
-        self.width = width
-        self.height = height
 
     def get_area(self):
         area = self.width * self.height
@@ -47,3 +52,10 @@ class Square(Rectangle):
     def __init__(self, side=9):
         self.width = side
         self.height = side
+
+    def __str__(self):
+        return f'Square(side={self.width})'
+    
+    def set_side(self, newS):
+        self.width = newS
+        self.height = newS
