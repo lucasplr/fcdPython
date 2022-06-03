@@ -1,5 +1,5 @@
 import copy
-from random import randint
+import random
 
 
 class Hat:
@@ -12,22 +12,25 @@ class Hat:
         print(self.contents)
 
     def draw(self, numb):
-        available = len(self.contents)
         balls = []
-        if numb > available:
+        if (numb > len(self.contents)):
             return self.contents
-        max = len(self.contents)
-        values = list()
-        for i in range(0, numb):
-            while True:
-                val = randint(0, max)
-                if values.count(val) != 0:
-                    val = randint(0, max)
-                else: 
-                    values.append(val)
-                    break
-        for c in range(0, len(values)):
-            balls.append(self.contents[values[c]])
-            self.contents.pop(values[c])
-        
-        return self.contents
+        for i in range(numb):
+            val = self.contents.pop(int(random.random() * len(self.contents)))
+            balls.append(val)
+        return balls
+
+def experiments(hat, expected_balls, num_balls_draw, num_experiments):
+    count = 0
+    for i in range (num_experiments):
+        expected_copy = copy.deepcopy(expected_balls)
+        hat_copy = copy.deepcopy(hat)
+        colors_gotten = hat_copy.draw(num_balls_draw)
+    
+    for color in colors_gotten:
+        if (color in expected_copy):
+            expected_copy[color]-=1
+
+    if(all(x <= 0 for x in expected_copy.values())):
+        count += 1
+    return count / num_experiments
